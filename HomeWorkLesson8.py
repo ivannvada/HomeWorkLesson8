@@ -107,9 +107,9 @@ def delete_records(file_name: str):
 
 path = 'phone_book.txt'
 
-try:                        # исключения try/except/finally
-    file = open(path, 'r')  # открыть файл
-except IOError:             # если нет файла он создается
+try:                        
+    file = open(path, 'r')  
+except IOError:             
     print('Создан новый справочник -> phone_book.txt ')
     file = open(path, 'w')
 finally:                    
